@@ -1,0 +1,26 @@
+.container {
+  padding: 1rem;
+}
+
+.accordian__wrapper {
+  width: 500px;
+  margin-top: 5px;
+  border: 1px solid rgb(16, 36, 42);
+}
+
+.accordian__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.accordian__header,
+.accordian__body {
+  padding: 1rem;
+}
+
+.accordian__icon {
+  font-size: 1.5rem;
+}
