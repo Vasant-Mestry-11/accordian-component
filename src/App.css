@@ -24,3 +24,46 @@
 .accordian__icon {
   font-size: 1.5rem;
 }
+
+.accordian {
+  margin-bottom: 1rem;
+}
+
+.accordian-checkbox {
+  display: none;
+}
+
+.accordian-title-label {
+  cursor: pointer;
+  background-color: cadetblue;
+  display: block;
+  padding: 1rem;
+  position: relative;
+}
+
+.accordian-content {
+  height: 0;
+  overflow: hidden;
+  background-color: grey;
+  transition: all 0.5s ease;
+}
+
+.icon::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.accordian-checkbox:checked ~ .accordian-content {
+  height: 100px;
+}
+
+.accordian-checkbox:checked + .accordian-title-label .icon::after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
